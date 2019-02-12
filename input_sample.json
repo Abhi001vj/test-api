@@ -1,0 +1,8 @@
+{
+    images:[
+        {
+            id: 111111111,
+            url: "local url in filesystem"
+        }
+    ]
+}

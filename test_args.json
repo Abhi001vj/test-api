@@ -1,0 +1,1 @@
+python test.py '{"images":[{"id": "example_01.jpg","url": "images/example_01.jpg"}]}'

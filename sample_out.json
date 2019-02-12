@@ -1,0 +1,20 @@
+{
+    images:[
+        {
+            id: 111111111,
+            objects: [
+                {
+                    id: 1,
+                    class: "apple"
+                    coordintes: {
+                        x: 0,
+                        y:0,
+                        h:0,
+                        w:0
+                    } 
+                }
+            ],
+            url: "local url in filesystem"
+        }
+    ]
+}
