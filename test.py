@@ -1,6 +1,5 @@
 # USAGE
-# python deep_learning_object_detection.py --image images/example_01.jpg \
-#	--prototxt MobileNetSSD_deploy.prototxt.txt --model MobileNetSSD_deploy.caffemodel
+# python test.py '{"images":[{"id": "example_01.jpg","url": "images/example_01.jpg"}]}'
 
 # import the necessary packages
 import numpy as np
@@ -24,7 +23,7 @@ def main():
     COLORS = np.random.uniform(0, 255, size=(len(CLASSES), 3))
 
     # load our serialized model from disk
-    print("[INFO] loading model...")
+    # print("[INFO] loading model...")
     net = cv2.dnn.readNetFromCaffe(prototxt, model)
 
     # load the input image and construct an input blob for the image
@@ -43,7 +42,7 @@ def main():
 
         # pass the blob through the network and obtain the detections and
         # predictions
-        print("[INFO] computing object detections...")
+        # print("[INFO] computing object detections...")
         net.setInput(blob)
         detections = net.forward()
         out_dict['objects'] = []
